@@ -12,6 +12,8 @@ cask 'bitnami-mampstack' do
             args:   ['--mode', 'unattended', '--unattendedmodeui', 'none', '--base_password', 'password', '--prefix', '/Applications/mampstack'],
             sudo:   false
 
+  # this preflight is to stop services if the install is using --force option
+  # need to check if file is available before executing
   # preflight do
   #  system '/bin/bash', '/Applications/mampstack/ctlscript.sh', 'stop'
   # end
@@ -27,6 +29,7 @@ cask 'bitnami-mampstack' do
     The path name was truncated to mampstack.
     This app takes a few minutes to install so be patient.
     If asked for a password use 'password'.
+
     EOS
   end
 end
