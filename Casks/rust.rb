@@ -1,6 +1,6 @@
 cask 'rust' do
-  version '1.5.0'
-  sha256 '5b0870d858f7527d96fc4f81d4371ae70d332c948cbbf0a7ad284a764974b81f'
+  version '1.10.0'
+  sha256 'fa9849790170fb13f4e1b10bbc56cd87591f9e64bece25ee88d208bc4b270f84'
 
   url "https://static.rust-lang.org/dist/rust-#{version}-x86_64-apple-darwin.pkg"
   name 'Rust'

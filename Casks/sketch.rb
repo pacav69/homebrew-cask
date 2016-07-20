@@ -1,10 +1,10 @@
 cask 'sketch' do
-  version '3.6.1'
-  sha256 '13c449c0e951178ee8d15b6ea9dd41871f3338b3035b3b628861f084eaa41e9c'
+  version '3.8.3'
+  sha256 '8103e15c81968d65c78409a06e95df34ea57299a56c15b063b5e4cb4abb577e9'
 
-  url 'http://www.sketchapp.com/static/download/sketch.zip'
+  url "http://www.sketchapp.com/download/sketch-#{version}.zip"
   appcast "http://www.sketchapp.com/appcast#{version.major}.xml",
-          checkpoint: '599f928ba500b61f006719136d8fc0fea15a4be4aab2378f06ee7e66706027f3'
+          checkpoint: 'f60562b55de76ab36f57857cd5d0b3d4547a61c19ddc68945ec022a2570a71dd'
   name 'Sketch'
   homepage 'http://www.sketchapp.com/'
   license :commercial

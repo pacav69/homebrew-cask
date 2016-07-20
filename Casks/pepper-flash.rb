@@ -1,8 +1,8 @@
 cask 'pepper-flash' do
-  version '20.0.0.228'
-  sha256 'c8eb2fde34a1b886de9fe68b299ec85b0acf83012fce5d3cef0e5e6e351fcddd'
+  version '22.0.0.209'
+  sha256 '7b6caa64e9701e6b8207222f7a455424d71add4308b7bcbf20f58f70159eece9'
 
-  url "https://admdownload.adobe.com/bin/live/AdobeFlashPlayer_#{version.to_i}ppau_a_install.dmg"
+  url "https://admdownload.adobe.com/bin/live/AdobeFlashPlayer_#{version.major}ppau_a_install.dmg"
   name 'Adobe Pepper Flash Player'
   homepage 'https://get.adobe.com/flashplayer/otherversions'
   license :gratis

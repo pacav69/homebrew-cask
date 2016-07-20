@@ -1,12 +1,12 @@
 cask 'calibre' do
-  if MacOS.release < :mountain_lion
+  if MacOS.release <= :lion
     version '1.48.0'
     sha256 '0533283965fbc9a6618d0b27c85bdf3671fe75ff0e89eeff406fe1457ee61b14'
   else
-    version '2.53.0'
-    sha256 '06978acf409638ebd2de54f741dbe472081b095e69b8f443b5451d5c6bed7015'
+    version '2.62.0'
+    sha256 '97484d8ae3ad324c05546076fe96634fd0d3fed2083312974ed3a2962d1464c4'
     appcast 'https://github.com/kovidgoyal/calibre/releases.atom',
-            checkpoint: '284c25225cd186f76639e01006fc453c44aa5a160b532bcdf8e9a340a30fdb91'
+            checkpoint: 'b3f38e07c3635780012dcce5c7edb636ce412d4f75b8f45fdffd92ee279d058c'
   end
 
   url "https://download.calibre-ebook.com/#{version}/calibre-#{version}.dmg"
@@ -15,26 +15,26 @@ cask 'calibre' do
   license :gpl
 
   app 'calibre.app'
-  binary 'calibre.app/Contents/MacOS/calibre'
-  binary 'calibre.app/Contents/MacOS/calibre-complete'
-  binary 'calibre.app/Contents/MacOS/calibre-customize'
-  binary 'calibre.app/Contents/MacOS/calibre-debug'
-  binary 'calibre.app/Contents/MacOS/calibre-parallel'
-  binary 'calibre.app/Contents/MacOS/calibre-server'
-  binary 'calibre.app/Contents/MacOS/calibre-smtp'
-  binary 'calibre.app/Contents/MacOS/calibredb'
-  binary 'calibre.app/Contents/MacOS/ebook-convert'
-  binary 'calibre.app/Contents/MacOS/ebook-device'
-  binary 'calibre.app/Contents/MacOS/ebook-edit'
-  binary 'calibre.app/Contents/MacOS/ebook-meta'
-  binary 'calibre.app/Contents/MacOS/ebook-polish'
-  binary 'calibre.app/Contents/MacOS/ebook-viewer'
-  binary 'calibre.app/Contents/MacOS/fetch-ebook-metadata'
-  binary 'calibre.app/Contents/MacOS/lrf2lrs'
-  binary 'calibre.app/Contents/MacOS/lrfviewer'
-  binary 'calibre.app/Contents/MacOS/lrs2lrf'
-  binary 'calibre.app/Contents/MacOS/markdown-calibre'
-  binary 'calibre.app/Contents/MacOS/web2disk'
+  binary "#{appdir}/calibre.app/Contents/MacOS/calibre"
+  binary "#{appdir}/calibre.app/Contents/MacOS/calibre-complete"
+  binary "#{appdir}/calibre.app/Contents/MacOS/calibre-customize"
+  binary "#{appdir}/calibre.app/Contents/MacOS/calibre-debug"
+  binary "#{appdir}/calibre.app/Contents/MacOS/calibre-parallel"
+  binary "#{appdir}/calibre.app/Contents/MacOS/calibre-server"
+  binary "#{appdir}/calibre.app/Contents/MacOS/calibre-smtp"
+  binary "#{appdir}/calibre.app/Contents/MacOS/calibredb"
+  binary "#{appdir}/calibre.app/Contents/MacOS/ebook-convert"
+  binary "#{appdir}/calibre.app/Contents/MacOS/ebook-device"
+  binary "#{appdir}/calibre.app/Contents/MacOS/ebook-edit"
+  binary "#{appdir}/calibre.app/Contents/MacOS/ebook-meta"
+  binary "#{appdir}/calibre.app/Contents/MacOS/ebook-polish"
+  binary "#{appdir}/calibre.app/Contents/MacOS/ebook-viewer"
+  binary "#{appdir}/calibre.app/Contents/MacOS/fetch-ebook-metadata"
+  binary "#{appdir}/calibre.app/Contents/MacOS/lrf2lrs"
+  binary "#{appdir}/calibre.app/Contents/MacOS/lrfviewer"
+  binary "#{appdir}/calibre.app/Contents/MacOS/lrs2lrf"
+  binary "#{appdir}/calibre.app/Contents/MacOS/markdown-calibre"
+  binary "#{appdir}/calibre.app/Contents/MacOS/web2disk"
 
   zap delete: [
                 '~/Library/Preferences/net.kovidgoyal.calibre.plist',

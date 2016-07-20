@@ -1,11 +1,11 @@
 cask 'vox' do
-  version '2750.1,1458727468'
-  sha256 '30f1ff0c7f75c596e348de027115531935cce8febc53c5924b11d4d231acf956'
+  version '2810.6,1466704048'
+  sha256 '34dd198e7ad10ca543aaea644be450c66758e64f0034d377e9864c2e262d094e'
 
   # devmate.com/com.coppertino.Vox was verified as official when first introduced to the cask
   url "https://dl.devmate.com/com.coppertino.Vox/#{version.before_comma}/#{version.after_comma}/Vox-#{version.before_comma}.zip"
   appcast 'https://updates.devmate.com/com.coppertino.Vox.xml',
-          checkpoint: 'f6a4a28a53b4470bfb866cdf0c150795c787bb539352f063f4ec6942906c79cb'
+          checkpoint: 'fffc16ccbe21909e29645f197a7416a0728d6969e466e026c73f860510bf6495'
   name 'VOX'
   homepage 'https://coppertino.com/vox/mac'
   license :freemium
