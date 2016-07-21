@@ -4,7 +4,7 @@ cask 'bitnami-mampstack' do
 
   url 'https://bitnami.com/redirect/to/97696/bitnami-mampstack-5.6.19-0-osx-x86_64-installer.dmg'
   name 'Bitnami Mac Apache MySQL PHP (MAMP)'
-  homepage 'http://bitnami.org/'
+  homepage 'http://bitnami.com/'
   license :gratis
 
   app '/Applications/mampstack/manager-osx.app'
